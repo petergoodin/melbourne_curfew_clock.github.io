@@ -16,10 +16,10 @@ window.onload = function switchmessage() {
 	var message;
 	var time = new Date().getUTCHours() + 10; //Melb TZ
 	if (time >= 20 || time < 5) {
-	message = "Yep!" ;
+	message = "Yep! Stay at home." ;
 	} 
 	else if (time < 20) {
-	message = "Nope!";
+	message = "Nope! But please try to stay at home.";
 	}
 	document.getElementById("whichmessage").innerHTML = message;
 }
