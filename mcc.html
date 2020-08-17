@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Melbourne Curfew Clock</title>
+</head>
+
+<body>
+	<center><h1 style="font-size:75px;">Is Melbourne in curfew?</h1>
+		<text style="font-size:50px;", id="whichmessage"></text></center>
+	
+	
+<script>
+window.onload = function switchmessage() {
+	var message;
+	var time = new Date().getHours();
+	if (time >= 20 || time < 5) {
+	message = "Yep!" ;
+	} 
+	else if (time < 20) {
+	message = "Nope!";
+	}
+	document.getElementById("whichmessage").innerHTML = message;
+}
+</script>
+
+</body>
+</html>
