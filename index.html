@@ -12,7 +12,7 @@
 <script>
 window.onload = function switchmessage() {
 	var message;
-	var time = new Date().getHours();
+	var time = new Date().getUTCHours() + 10; //Melb TZ
 	if (time >= 20 || time < 5) {
 	message = "Yep!" ;
 	} 
