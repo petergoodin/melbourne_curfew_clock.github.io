@@ -29,14 +29,12 @@ Peter Goodin, 2020.>
 <script>
 window.onload = function switchmessage() {
 	var message;
-	var time = new Date().getUTCHours(); //UTC
+	var time = new Date().getUTCHours()
 	if (time >= 10 || time < 19) {
 // 	message = "Yep! Stay at home." ;
-	message = time
 	} 
-	else if (time < 10) {
-// 	message = "Nope! But please try to stay at home.";
-	message = time
+	else  {
+	message = "Nope! But please try to stay at home.";
 	}
 	document.getElementById("whichmessage").innerHTML = message;
 }
