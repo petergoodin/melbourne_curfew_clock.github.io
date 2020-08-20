@@ -31,10 +31,10 @@ window.onload = function switchmessage() {
 	var message;
 	var time = new Date().getUTCHours()
 	if (time >= 10 || time < 19) {
-		message = "Yep! Stay at home." ;
+	message = "Yep! Stay at home.";
 	} 
-	else  {
-		message = "Nope! But please try to stay at home.";
+	else {
+	message = "Nope! But please try to stay at home.";
 	}
 	document.getElementById("whichmessage").innerHTML = message;
 }
